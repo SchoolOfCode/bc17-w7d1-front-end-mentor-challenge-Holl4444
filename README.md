@@ -102,7 +102,8 @@ using dev tools to check :hov\
 
 
 ### Continued development
-
+With more time I would add at least one more media screen query as its an abrasive leapt at the moment from mobile to desktop. I would also consider tablets and orientations.
+I would love to fix the problem with overflowing text at very narrow screen sizes, the imperfect ratios in desktop view and the convoluted code in the same!
 
 
 
