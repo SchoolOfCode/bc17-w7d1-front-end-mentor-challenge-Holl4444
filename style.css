@@ -201,22 +201,21 @@ button#cart-btn:active {
     width: 100%
    }
   
-   .price {
+  .price {
+    color: var(--soft-green);
+  }
 
-  color: var(--soft-green);
-}
+  .price.montserratMed {
 
-.price.montserratMed {
+    color: var(--dark-grey);
+  }
 
-  color: var(--dark-grey);
-}
+  #cart {
+    padding-right: 1.5rem;
+  }
 
-#cart {
-  padding-right: 1.5rem;
-}
-
-.float-float {
-  margin-bottom: 2.5rem;
-}
+  .float-float {
+    margin-bottom: 2.5rem;
+  }
 
 }
