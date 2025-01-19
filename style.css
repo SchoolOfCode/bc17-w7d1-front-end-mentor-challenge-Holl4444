@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'FrauncesBold';
+  src: url(Fonts/Fraunces_72pt-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FrauncesIt';
+  src: url(Fonts/Fraunces-Italic-VariableFont_SOFT\WONK\opsz\wght.ttf);
+}
+@font-face {
+  font-family: 'MonserratMed';
+  src: url(Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'MonserratBold';
+  src: url(Fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --primary-background: hsl(30, 38%, 92%);
+  --soft-green: hsl(158, 36%, 37%);
+  --hover: hsl(156, 42%, 18%, 100%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-grey: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'MonserratMed';
+  font-weight: 500;
+  background-color: var(--primary-background);
+  color: var(--dark-grey);
+}
+
+.content {
+  background-color: var(--white);
+  margin: 1.7rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pad1 {
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.floral {
+  margin: 1.2rem 0 0 0;
+  line-height: 1.4rem;
+}
+
+.pad2 {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.price {
+  font-size: 2.2em;
+  color: var(--soft-green);
+}
+
+.price.montserratMed {
+  font-size: 0.9em;
+  color: var(--dark-grey);
+}
+
+.float-float {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fraunces {
+  font-family: 'FrauncesBold';
+}
+
+.montserratMed {
+  font-family: 'MonserratMed';
+}
+
+h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+  margin: 0 0 0.8rem 0;
+}
+
+h1 {
+  font-family: 'MonserratBold';
+  font-size: 2.3em;
+  line-height: 0.92em;
+  color: var(--dark-blue);
+}
+
+#cart {
+  padding-right: 0.5rem;
+  min-width: 0;
+}
+
+button#cart-btn {
+  all: unset;
+  background-color: var(--soft-green);
+  color: var(--white);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#cart-btn:hover,
+button#cart-btn:active {
+  background-color: var(--hover);
+  transition: 0.7s;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
