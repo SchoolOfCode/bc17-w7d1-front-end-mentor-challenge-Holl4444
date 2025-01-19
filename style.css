@@ -49,10 +49,16 @@ body {
   justify-content: center;
 }
 
-img {
+#product-img1, #product-img2 {
   max-width: 100%;
   min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#product-img2 {
+  display: none;
 }
 
 .pad1 {
@@ -60,13 +66,13 @@ img {
   padding-bottom: 1rem;
 }
 
+.pad2 {
+  padding: 0 1.5rem 1.5rem;
+}
+
 .floral {
   margin: 1.2rem 0 0 0;
   line-height: 1.4rem;
-}
-
-.pad2 {
-  padding: 0 1.5rem 1.5rem;
 }
 
 .price {
@@ -111,7 +117,6 @@ h1 {
 
 #cart {
   padding-right: 0.5rem;
-  min-width: 0;
 }
 
 button#cart-btn {
@@ -138,4 +143,80 @@ button#cart-btn:active {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1024px) {
+   .content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+   }
+
+   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   
+   #product-img1 {
+    display: none;
+   }
+
+   #product-img2 {
+    border-radius:  1rem 0 0 1rem;
+    display:block;
+   }
+
+   #main {
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 60vh;
+   }
+
+   .pad1 {
+    padding: 0rem;
+   }
+
+   h4 {
+    margin-bottom: 1.5rem;
+   }
+
+   h1 {
+    line-height: 1em;
+    margin-bottom: 2.5rem;
+   }
+
+   .floral {
+    margin-bottom: 1.5rem;
+   }
+
+   button#cart-btn {
+
+    border-radius: 1rem;
+   }
+  
+   .price {
+
+  color: var(--soft-green);
+}
+
+.price.montserratMed {
+
+  color: var(--dark-grey);
+}
+
+#cart {
+  padding-right: 1.5rem;
+}
+
+.float-float {
+  margin-bottom: 2.5rem;
+}
+
 }
