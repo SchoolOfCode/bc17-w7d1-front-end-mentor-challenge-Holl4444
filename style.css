@@ -179,7 +179,7 @@ button#cart-btn:active {
     max-height: 60vh;
    }
 
-   .pad1 {
+   .pad1, .pad2 {
     padding: 0rem;
    }
 
@@ -196,9 +196,9 @@ button#cart-btn:active {
     margin-bottom: 1.5rem;
    }
 
-   button#cart-btn {
 
-    border-radius: 1rem;
+   button#cart-btn {
+    width: 100%
    }
   
    .price {
